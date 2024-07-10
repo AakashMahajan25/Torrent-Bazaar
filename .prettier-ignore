@@ -1,0 +1,33 @@
+# Ignore all files in node_modules
+node_modules/
+
+# Ignore build output directories
+dist/
+build/
+
+# Ignore all JavaScript files in the src directory
+src/**/*.js
+
+# Ignore specific configuration files
+vite.config.js
+jest.config.js
+
+# Ignore specific file extensions
+*.min.js
+*.min.css
+
+# Ignore specific directories
+coverage/
+public/
+
+# Ignore all files in a specific directory
+src/generated/*
+
+# Ignore specific file types in certain directories
+src/**/*.d.ts
+
+# Ignore ESLint cache
+.eslintcache
+
+# Ignore any other specific files or patterns
+# Add any other files or directories you want to ignore below
