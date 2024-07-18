@@ -1,10 +1,12 @@
-import React from "react";
 import Button from "../components/ui/button";
 import Input from "../components/ui/input";
 import Label from "../components/ui/label";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 export default function Login() {
+  const { loginWithRedirect } = useAuth0();
+
   return (
     <div className="w-full lg:grid lg:grid-cols-2 h-[100vh] overflow-y-hidden bg-black text-white">
       <div className="flex items-center justify-center py-12 px-5">
@@ -49,7 +51,10 @@ export default function Login() {
             >
               Login
             </Button>
-            <Button className="w-full border-[1px] border-gray-600 py-2">
+            <Button
+              className="w-full border-[1px] border-gray-600 py-2"
+              onClick={() => loginWithRedirect()}
+            >
               Login with Google
             </Button>
           </div>
