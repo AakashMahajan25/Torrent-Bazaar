@@ -12,3 +12,5 @@ export const NODE_ENV = stringer(process.env.NODE_ENV);
 export const APP_ORIGIN = stringer(process.env.APP_ORIGIN);
 export const JWT_SECRET = stringer(process.env.JWT_SECRET);
 export const JWT_REFRESH_SECRET = stringer(process.env.JWT_REFRESH_SECRET);
+export const RESEND_API_KEY = stringer(process.env.RESEND_API_KEY);
+export const EMAIL_SENDER = stringer(process.env.EMAIL_SENDER);
