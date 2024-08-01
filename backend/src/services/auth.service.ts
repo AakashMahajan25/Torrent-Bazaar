@@ -1,4 +1,3 @@
-import { appendFile } from "fs";
 import { APP_ORIGIN } from "../constants/env";
 import {
   CONFLICT,
@@ -6,7 +5,6 @@ import {
   NOT_FOUND,
   TOO_MANY_REQUESTS,
   UNAUTHORIZED,
-  UNPROCESSABLE_CONTENT,
 } from "../constants/http";
 import VerificationCodeType from "../constants/verificationCodeType";
 import SessionModel, { SessionDocument } from "../models/session.model";
@@ -32,7 +30,6 @@ import {
   verifyToken,
 } from "../utils/jwt";
 import { sendMail } from "../utils/sendMail";
-import { StringSchemaDefinition } from "mongoose";
 
 type CreateAccountParams = {
   email: string;
